@@ -2,7 +2,7 @@
 .team {
   background-color: #f5f4fa;
   padding-bottom: 94px;
-   padding-top: 94px;
+  padding-top: 94px;
 }
 .team__title {
   font-family: var(--font-family);
@@ -60,16 +60,18 @@
 }
 .team__list {
   @media screen and (min-width: 748px) {
- @extend %flex-align;
+    @extend %flex-align;
     & .team__list--photo:nth-child(2n) {
       margin-right: 0px;
     }
+  }
   @media screen and (min-width: 1200px) {
-   @extend %align-list;
+    @extend %align-list;
     & .team__list--photo:last-child {
       margin-right: 0px;
     }
   }
+}
 .name__paragraf {
   font-weight: normal;
   color: var(--section-paragraf-color);
@@ -97,6 +99,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .network__link:hover {
   background-color: #188ce8;
   fill: white;
