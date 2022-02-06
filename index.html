@@ -17,7 +17,7 @@
 
 <body class="body">
     <!-- Основной блок навигации -->
-<header class="header">
+<!-- <header class="header">
     <div class="container header__navigation">
             <nav class="header__navigation-main">
 
@@ -48,7 +48,7 @@
                 </li>
             </ul>
     </div>
-</header>
+</header> -->
     <!-- Секция заказать услугу -->
     <main>
             <section class="service">
@@ -109,11 +109,10 @@
                 </div> 
             </section>
         
-        <section class="working">
-            <div class="container">
-                <h2 class="working__title">Чем мы занимаемся</h2>
                 <!-- Картитнки -->
-                
+                <section class="working">
+                    <div class="container">
+                        <h2 class="working__title">Чем мы занимаемся</h2>
                     <ul class="working__list">
                         <li class="working__list--photo">
                             <div class="photo">
@@ -139,163 +138,203 @@
         <!-- Наша команда-->
             <section class="team">
                 <div class="container">
-                     <h2 class="team__title">Наша команда</h2>
-                     <ul class="team__list"> 
+                    <h2 class="team__title">Наша команда</h2>
+                    <ul class="team__list">
                         <li class="team__list--photo">
+                            <picture>
+                                <source srcset="./images/im_sec_2/img_1/mob-1x.jpg  1x,
+                                                                ./images/im_sec_2/img_1/mob-2x.jpg  2x"
+                                    media="(min-width: 480px)" />
+                                <source srcset="./images/im_sec_2/img_1/tab-1x.jpg  1x,
+                                                                ./images/im_sec_2/img_1/tab-2x.jpg  2x"
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/im_sec_2/img_1/dskt-1x.jpg  1x,
+                                                                ./images/im_sec_2/img_1/dskt-2x.jpg  2x"
+                                    media="(min-width: 1200px)" />
+                            </picture>
                             <img src="./images/img_(3).jpg" alt="Игорь демьяненко Product Designer" width="270">
                             <div class="name">
-                            <h3 class="name__title">Игорь Демьяненко</h3>
-                            <p class="name__paragraf">Product Designer</p>
-
-<ul class="network">
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-instagram-2"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-twitter-2"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-facebook-2"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-linkedin-2"></use>
-            </svg>
-        </a>
-    </li>
-</ul>
-                            </div> 
+                                <h3 class="name__title">Игорь Демьяненко</h3>
+                                <p class="name__paragraf">Product Designer</p>
+            
+                                <ul class="network">
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-instagram-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-twitter-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-facebook-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-linkedin-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="team__list--photo">
+                            <picture>
+                                <source srcset="./images/im_sec_2/img_2/mob-1x.jpg  1x,
+                                                                        ./images/im_sec_2/img_2/mob-2x.jpg  2x"
+                                    media="(min-width: 480px)" />
+                                <source srcset="./images/im_sec_2/img_2/tab-1x.jpg  1x,
+                                                                        ./images/im_sec_2/img_2/tab-2x.jpg  2x"
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/im_sec_2/img_2/dskt-1x.jpg  1x,
+                                                                        ./images/im_sec_2/img_2/dskt-2x.jpg  2x"
+                                    media="(min-width: 1200px)" />
+                            </picture>
                             <img src="./images/img_(4).jpg" alt="Ольга Репина Frontent Developer" width="270">
                             <div class="name">
-                            <h3 class="name__title">Ольга Репина</h3>
-                            <p class="name__paragraf">Frontent Developer</p>
-<ul class="network">
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-instagram-2"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-twitter-2"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-facebook-2"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-linkedin-2"></use>
-            </svg>
-        </a>
-    </li>
-</ul>
+                                <h3 class="name__title">Ольга Репина</h3>
+                                <p class="name__paragraf">Frontent Developer</p>
+                                <ul class="network">
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-instagram-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-twitter-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-facebook-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-linkedin-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                         <li class="team__list--photo">
+                            <picture>
+                                <source srcset="./images/im_sec_2/img_3/mob-1x.jpg  1x,
+                                                                                    ./images/im_sec_2/img_3/mob-2x.jpg  2x"
+                                    media="(min-width: 480px)" />
+                                <source srcset="./images/im_sec_2/img_3/tab-1x.jpg  1x,
+                                                                                    ./images/im_sec_2/img_3/tab-2x.jpg  2x"
+                                    media="(min-width: 768px)" />
+                                <source srcset="./images/im_sec_2/img_3/dskt-1x.jpg  1x,
+                                                                                    ./images/im_sec_2/img_3/dskt-2x.jpg  2x"
+                                    media="(min-width: 1200px)" />
+                            </picture>
                             <img src="./images/img_(5).jpg" alt="Николай Тарасов Marketing" width="270">
                             <div class="name">
-                            <h3 class="name__title">Николай Тарасов</h3>
-                            <p class="name__paragraf">Marketing</p>
-<ul class="network">
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-instagram-2"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-twitter-2"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-facebook-2"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-linkedin-2"></use>
-            </svg>
-        </a>
-    </li>
-</ul>
+                                <h3 class="name__title">Николай Тарасов</h3>
+                                <p class="name__paragraf">Marketing</p>
+                                <ul class="network">
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-instagram-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-twitter-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-facebook-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-linkedin-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                         <li class="team__list--photo">
+                            <picture>
+                                <source srcset="./images/im_sec_2/img_4/mob-1x.jpg  1x,
+                                                            ./images/im_sec_2/img_4/mob-2x.jpg  2x" media="(min-width: 480px)" />
+                                <source srcset="./images/im_sec_2/img_4/tab-1x.jpg  1x,
+                                                            ./images/im_sec_2/img_4/tab-2x.jpg  2x" media="(min-width: 768px)" />
+                                <source srcset="./images/im_sec_2/img_4/dskt-1x.jpg  1x,
+                                                            ./images/im_sec_2/img_4/dskt-2x.jpg  2x" media="(min-width: 1200px)" />
+                            </picture>
                             <img src="./images/img_(6).jpg" alt="Михаил Ермаков UI Designer" width="270">
                             <div class="name">
-                            <h3 class="name__title">Михаил Ермаков</h3>
-                            <p class="name__paragraf">UI Designer</p>
-<ul class="network">
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-instagram-2"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-twitter-2"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-facebook-2"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="network__list">
-        <a href="" class="network__link">
-            <svg class="network__link--svg" width="20" height="20">
-                <use href="./img/sprite.svg#icon-linkedin-2"></use>
-            </svg>
-        </a>
-    </li>
-</ul>
-                            </div>    
+                                <h3 class="name__title">Михаил Ермаков</h3>
+                                <p class="name__paragraf">UI Designer</p>
+                                <ul class="network">
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-instagram-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-twitter-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-facebook-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network__list">
+                                        <a href="" class="network__link">
+                                            <svg class="network__link--svg" width="20" height="20">
+                                                <use href="./img/sprite.svg#icon-linkedin-2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </section>
-
             <!-- Секция постоянные клиенты -->
-    <section class="clients">
+    <!-- <section class="clients">
             <div class="container">
             <h2 class="clients__title">Постоянные клиенты</h2>
     
@@ -348,9 +387,9 @@
             </div>
     </section>
             
-    </main>
+    </main> -->
     <!-- Подвал -->
-    <footer class="footer">
+    <!-- <footer class="footer">
 <div class="container flex">
                 <div class="сontacts">
            <a href="./index.html" class="logo"><span class="logo__blue">Web</span>
@@ -395,10 +434,10 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
 
             <!-- Форма подписки -->
-            <form action="#" class="subscribe">
+            <!-- <form action="#" class="subscribe">
      <label class="subscribe__mail" for="e-mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
           <input 
          type="text"
@@ -414,10 +453,10 @@
     </button>
     </form>
 </div>
-    </footer>
+    </footer> -->
 
     <!-- Modalka -->
-    <button type="button" class="modal__open" data-modal-open></button>
+    <!-- <button type="button" class="modal__open" data-modal-open></button>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close class="modal__close">
@@ -460,9 +499,9 @@
     <div class="form">
         <label class="form__label" for="user-text">Комментарий</label>
         <textarea name="user-text" id="user-text" class="form__label--text" placeholder="Введите текст"></textarea>
-    </div>
+    </div> -->
     <!-- Чекбокс -->
-    <div class="checkbox">
+    <!-- <div class="checkbox">
         <label class="checkbox__label">
             <input class="checkbox__input" type="checkbox" name="dogovir" />
             <span class="icon"></span>
@@ -482,6 +521,6 @@
 
 </body>
 
-</html>
+</html> -->
 
 

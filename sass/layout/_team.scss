@@ -1,21 +1,75 @@
+//-----------Наша команда----------- //
 .team {
   background-color: #f5f4fa;
   padding-bottom: 94px;
-  padding-top: 94px;
+   padding-top: 94px;
 }
-.team__list {
-  display: flex;
-  & .team__list--photo:last-child {
-    margin-right: 0px;
+.team__title {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--section-title-color);
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    margin-bottom: 60px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    margin-bottom: 60px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 }
+.name__title {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  color: var(--section-title-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
 .team__list--photo {
-  margin-right: 30px;
   background: var(--color-letter-white);
   border-bottom: #212121;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+    width: 450px;
+  }
+  @media screen and (min-width: 748px) {
+    width: 354px;
+    margin-right: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin-right: 30px;
+  }
 }
-
+.team__list {
+  @media screen and (min-width: 748px) {
+ @extend %flex-align;
+    & .team__list--photo:nth-child(2n) {
+      margin-right: 0px;
+    }
+  @media screen and (min-width: 1200px) {
+   @extend %align-list;
+    & .team__list--photo:last-child {
+      margin-right: 0px;
+    }
+  }
 .name__paragraf {
   font-weight: normal;
   color: var(--section-paragraf-color);
