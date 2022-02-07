@@ -1,12 +1,23 @@
 .clients {
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+  }
 }
 .clients__title {
-  padding-top: 60px;
-}
-
-.clients__list {
-  @media screen and (min-width: 420px) {
+  padding-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
   }
+}
+.companies {
+  @media screen and (min-width: 480px) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+   
+  & .images:nth-child(2n) {
+    margin-right: 0;
+  }
+
 }
 // .clients {
 //   padding-top: 94px;

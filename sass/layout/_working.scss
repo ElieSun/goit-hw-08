@@ -1,6 +1,11 @@
 .working {
+  display: none;
+
   @media screen and (max-width: 767px) {
-    display: none;
+    display: block;
+  }
+  @media screen and (max-width: 1200px) {
+    display: block;
   }
 }
 .working__list {
