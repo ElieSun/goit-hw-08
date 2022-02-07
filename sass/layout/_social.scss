@@ -1,8 +1,38 @@
-.social__list {
-  display: flex;
+.social {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 235px;
+    align-items: baseline;
+  }
 }
+
+.social__list {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 200px;
+  }
+}
+.social__title {
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 234px;
+  }
+}
+
 .social__link {
-  @extend %align-list;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   margin-right: 10px;
   width: 44px;
   height: 44px;
