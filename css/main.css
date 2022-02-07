@@ -10,12 +10,21 @@
   --font-family-header: "Raleway", sans-serif;
 }
 
-.checkbox__label, .header__navigation, .header__navigation-main, .link-mail, .clients__list {
+.checkbox__label,
+.header__navigation,
+.header__navigation-main,
+.link-mail,
+.clients__list {
   display: flex;
   align-items: center;
 }
 
-.send, .modal__close, .link-tel, .section__icons, .companies__link, .social__link {
+.send,
+.modal__close,
+.link-tel,
+.section__icons,
+.companies__link,
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,7 +99,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.service__button:hover, .service__button:focus {
+.service__button:hover,
+.service__button:focus {
   background-color: var(--active-link-color);
 }
 
@@ -113,7 +123,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buttons__list--blue:hover, .buttons__list--blue:focus {
+.buttons__list--blue:hover,
+.buttons__list--blue:focus {
   background-color: var(--active-link-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -141,7 +152,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-btn:hover, .section-btn:focus {
+.section-btn:hover,
+.section-btn:focus {
   background-color: var(--active-link-color);
 }
 
@@ -164,7 +176,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buttons__list--grey:hover, .buttons__list--grey:focus {
+.buttons__list--grey:hover,
+.buttons__list--grey:focus {
   background-color: var(--color-letter-blue);
   color: var(--color-letter-white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -218,7 +231,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.send__btn:hover, .send__btn:focus {
+.send__btn:hover,
+.send__btn:focus {
   background: var(--active-link-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -697,7 +711,9 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__navigation-link:hover, .header__navigation-link:focus, .header__navigation-link:active {
+.header__navigation-link:hover,
+.header__navigation-link:focus,
+.header__navigation-link:active {
   color: var(--color-letter-blue);
 }
 
@@ -730,7 +746,9 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.studio-portfolio:focus, .studio-portfolio:hover, .studio-portfolio:active {
+.studio-portfolio:focus,
+.studio-portfolio:hover,
+.studio-portfolio:active {
   color: var(--color-letter-blue);
 }
 
@@ -749,7 +767,9 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-mail:focus, .link-mail:hover, .link-mail:active {
+.link-mail:focus,
+.link-mail:hover,
+.link-mail:active {
   color: var(--color-letter-blue);
 }
 
@@ -768,7 +788,9 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-tel:focus, .link-tel:hover, .link-tel:active {
+.link-tel:focus,
+.link-tel:hover,
+.link-tel:active {
   color: var(--color-letter-blue);
 }
 
@@ -1481,7 +1503,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.images__link:focus, .images__link:hover {
+.images__link:focus,
+.images__link:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
