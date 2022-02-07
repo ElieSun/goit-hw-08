@@ -1,8 +1,3 @@
-
-// .container {
-// margin-bottom: 20px;
-// }
-
 .sait-logo {
   @media screen and (min-width: 480px) {
     width: 134px;
@@ -18,25 +13,24 @@
   font-style: normal;
   font-weight: bold;
   @media screen and (min-width: 480px) {
-  font-size: 24px;
-  line-height: calc(24 / 28);
-  letter-spacing: 0.03em;
-}
+    font-size: 24px;
+    line-height: calc(24 / 28);
+    letter-spacing: 0.03em;
+  }
 }
 .sait-logo__black {
   color: var(--section-title-color);
   font-family: var(--font-family-header);
   font-style: normal;
   font-weight: bold;
-   @media screen and (min-width: 480px) {
-  font-size: 24px;
-  line-height: calc(24 / 28);
-  letter-spacing: 0.03em;
-   }
+  @media screen and (min-width: 480px) {
+    font-size: 24px;
+    line-height: calc(24 / 28);
+    letter-spacing: 0.03em;
+  }
 }
 .header__navigation--button {
   @media screen and (min-width: 480px) {
- 
   }
 }
 
@@ -52,18 +46,17 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
-  border-radius: 50%;
   outline: none;
 
   @media (min-width: 768px) {
-  .header__navigation--button {
-    display: none;
-  }
-  
-  &:hover,
-  &:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
+    .header__navigation--button {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
   }
 }
 // .header__navigation-contact {
