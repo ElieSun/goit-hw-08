@@ -59,10 +59,10 @@
   }
 }
 .team__list {
-  @media screen and (min-width: 748px) {
-    & .team__list--photo:nth-child(2n) {
-      margin-right: 0px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
   }
   @media screen and (min-width: 1200px) {
     & .team__list--photo:last-child {

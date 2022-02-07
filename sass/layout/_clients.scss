@@ -25,6 +25,8 @@
   }
 }
 .clients__list {
+  display: flex;
+  flex-wrap: wrap;
   @media screen and (min-width: 480px) {
     display: flex;
     flex-wrap: wrap;
@@ -42,6 +44,9 @@
   }
 }
 .companies__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #afb1b8;
   height: 92px;
 
@@ -67,6 +72,12 @@
     display: flex;
     align-items: center;
   }
+}
+.companies__link--svg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
 }
 // .companies__link--svg {
 //   @media screen and (min-width: 480px) {

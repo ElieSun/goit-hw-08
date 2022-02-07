@@ -998,9 +998,11 @@ img {
   }
 }
 
-@media screen and (min-width: 748px) {
-  .team__list .team__list--photo:nth-child(2n) {
-    margin-right: 0px;
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
   }
 }
 
@@ -1096,6 +1098,11 @@ img {
   }
 }
 
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media screen and (min-width: 480px) {
   .clients__list {
     display: flex;
@@ -1121,6 +1128,9 @@ img {
 }
 
 .companies__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #afb1b8;
   height: 92px;
   fill: #afb1b8;
@@ -1155,13 +1165,35 @@ img {
   }
 }
 
-.сontacts {
-  margin-right: 70px;
+.companies__link--svg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.contacts {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo {
-  margin-bottom: 20px;
   display: block;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-left: 115px;
+  }
 }
 
 .logo__white {
@@ -1169,115 +1201,20 @@ img {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: calc(26 / 31);
-  margin-bottom: 20px;
-}
-
-.сontacts__address {
-  font-family: var(--font-family);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 24px;
+  line-height: calc 1.16667;
   letter-spacing: 0.03em;
-  color: var(--color-letter-white);
-  margin-bottom: 9px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.сontacts__address:hover {
-  color: var(--color-letter-blue);
-}
-
-.сontacts__address:active {
-  color: var(--section-paragraf-color);
-}
-
-.сontacts__address:focus {
-  color: var(--color-letter-white);
-}
-
-.сontacts__mail {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
-  display: block;
-  margin-top: 9px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.сontacts__mail:hover {
-  color: var(--color-letter-blue);
-}
-
-.сontacts__mail:active {
-  color: var(--active-link-color);
-}
-
-.сontacts__mail:focus {
-  color: var(--color-letter-white);
-}
-
-.сontacts__address {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: var(--color-letter-white);
-  padding-bottom: 9px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.сontacts__address:hover {
-  color: var(--color-letter-blue);
-}
-
-.сontacts__address:active {
-  color: var(--active-link-color);
-}
-
-.сontacts__address:focus {
-  color: var(--section-paragraf-color);
-}
-
-.сontacts__tel {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  display: block;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.сontacts__tel:hover {
-  color: var(--color-letter-blue);
-}
-
-.сontacts__tel:active {
-  color: var(--active-link-color);
-}
-
-.сontacts__tel:focus {
-  color: var(--color-letter-white);
+@media screen and (min-width: 1200px) {
+  .logo__white {
+    font-size: 26px;
+    line-height: calc(26 / 31);
+    margin-bottom: 20px;
+  }
 }
 
 .logo__blue {
@@ -1285,10 +1222,21 @@ img {
   font-family: var(--font-family-header);
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: calc(26 / 31);
-  letter-spacing: 0.02em;
-  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: calc 1.16667;
+  letter-spacing: 0.03em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo__blue {
+    font-size: 26px;
+    line-height: calc(26 / 31);
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+  }
 }
 
 .social__list {
