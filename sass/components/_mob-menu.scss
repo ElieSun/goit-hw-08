@@ -1,0 +1,19 @@
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.open-mob-menu {
+  display: block;
+  margin-left: auto;
+}
+.close-mob-menu {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 25px;
+}

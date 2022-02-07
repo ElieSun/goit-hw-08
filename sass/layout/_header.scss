@@ -29,36 +29,37 @@
     letter-spacing: 0.03em;
   }
 }
-.header__navigation--button {
-  @media screen and (min-width: 480px) {
-  }
-}
+// .header__navigation--button {
+//   margin-left: auto;
+//   @media screen and (min-width: 480px) {
+//   }
+// }
 
-.header__navigation--button {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+// .header__navigation--button {
+//   min-height: 40px;
+//   min-width: 40px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
 
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
+//   margin: 0;
+//   padding: 0;
+//   background-color: transparent;
+//   cursor: pointer;
+//   border: none;
+//   outline: none;
 
-  @media (min-width: 768px) {
-    .header__navigation--button {
-      display: none;
-    }
+//   @media (min-width: 768px) {
+//     .header__navigation--button {
+//       display: none;
+//     }
 
-    &:hover,
-    &:focus {
-      background-color: rgba(0, 0, 0, 0.1);
-    }
-  }
-}
+//     &:hover,
+//     &:focus {
+//       background-color: rgba(0, 0, 0, 0.1);
+//     }
+//   }
+// }
 // .header__navigation-contact {
 //   display: flex;
 //   margin-left: auto;
