@@ -217,31 +217,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.subscribe__btn {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.06px;
-  color: var(--color-letter-white);
-  line-height: calc(30 / 16);
-  background: var(--color-letter-blue);
-  border-radius: 4px;
-  border: none;
-  transform: translateX(185%);
-  padding: 0 62px 0 29px;
-  min-width: 200px;
-  min-height: 50px;
-  transition-property: background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.subscribe__btn:hover {
-  background: var(--active-link-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .img-podpiska {
   position: absolute;
   top: auto;
@@ -1505,14 +1480,11 @@ img {
 }
 
 .subscribe {
-  margin-left: 93px;
-  position: relative;
+  padding-top: 60px;
 }
 
 .subscribe__mail {
-  display: flex;
-  flex-wrap: wrap;
-  color: #ffffff;
+  color: white;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -1523,8 +1495,10 @@ img {
   margin-bottom: 20px;
 }
 
-.subscribe__mail {
-  color: #ffffff;
+@media screen and (min-width: 480px) {
+  .subscribe__mail {
+    padding-bottom: 20px;
+  }
 }
 
 .subscribe__mail--input {
@@ -1538,6 +1512,31 @@ img {
   min-width: 358px;
   min-height: 50px;
   color: white;
+}
+
+.subscribe__btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06px;
+  color: var(--color-letter-white);
+  line-height: calc(30 / 16);
+  background: var(--color-letter-blue);
+  border-radius: 4px;
+  border: none;
+  transform: translateX(185%);
+  padding: 0 62px 0 29px;
+  min-width: 200px;
+  min-height: 50px;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe__btn:hover {
+  background: var(--active-link-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .footer {
