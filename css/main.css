@@ -169,11 +169,25 @@ img {
   padding-top: 94px;
 }
 
-.buttons__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
+@media screen and (min-width: 480px) {
+  .buttons__list {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buttons__list {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .buttons__list--item {
@@ -637,9 +651,32 @@ img {
   justify-content: space-between;
 }
 
-.open-mob-menu {
-  display: block;
-  margin-left: auto;
+@media screen and (max-width: 767px) {
+  .open-mob-menu {
+    display: inline-block;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0);
+    top: 8px;
+    right: 8px;
+  }
+  .open-mob-menu:hover .header__navigation--button {
+    fill: #188ce8;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .open-mob-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .open-mob-menu {
+    display: none;
+  }
 }
 
 .close-mob-menu {
@@ -733,12 +770,57 @@ img {
   left: 100%;
 }
 
+.close-mob-menu {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  top: 8px;
+  right: 8px;
+}
+
+.close-mob-menu:hover .close-menu__img {
+  fill: #188ce8;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 @media screen and (min-width: 480px) {
   .sait-logo {
     width: 134px;
     margin-left: 15px;
     margin-top: 16px;
     margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .open-mob-menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0);
+    top: 8px;
+    right: 8px;
+  }
+  .open-mob-menu:hover .header__navigation--button {
+    fill: #188ce8;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .open-mob-menu {
+    display: none;
   }
 }
 
@@ -1709,28 +1791,73 @@ img {
 }
 
 /* Студия Список абзацев*/
-.posters {
-  display: flex;
-  flex-wrap: wrap;
+.images {
+  margin-bottom: 30px;
 }
 
-.posters .images:last-child {
-  margin-right: 0px;
+@media screen and (min-width: 480px) {
+  .images {
+    width: 450px;
+    height: 405px;
+  }
 }
 
-.posters .images:nth-child(-n + 3) {
-  margin-top: 0;
+@media screen and (min-width: 768px) {
+  .images {
+    width: 354px;
+    height: 440px;
+  }
 }
 
-.posters .images:nth-child(3n + 1) {
-  margin-left: 0;
+@media screen and (min-width: 1200px) {
+  .images {
+    width: 370px;
+    height: 440px;
+  }
 }
 
-.posters > .images {
-  background: #ffffff;
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
-  margin-top: 30px;
+@media screen and (min-width: 768px) {
+  .posters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .posters .images:last-child {
+    margin-right: 0px;
+  }
+  .posters .images:nth-child(-n + 3) {
+    margin-top: 0;
+  }
+  .posters .images:nth-child(3n + 1) {
+    margin-left: 0;
+  }
+  .posters > .images {
+    background: #ffffff;
+    flex-basis: calc((100% - 90px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .posters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .posters .images:last-child {
+    margin-right: 0px;
+  }
+  .posters .images:nth-child(-n + 3) {
+    margin-top: 0;
+  }
+  .posters .images:nth-child(3n + 1) {
+    margin-left: 0;
+  }
+  .posters > .images {
+    background: #ffffff;
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .categories-contact {
@@ -1874,9 +2001,18 @@ img {
 }
 
 /* Студия Список абзацев*/
-.posters {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .posters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .posters {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /* Портфолио */

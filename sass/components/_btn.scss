@@ -82,11 +82,20 @@
   padding-top: 94px;
 }
 .buttons__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
+
 .buttons__list--item {
   display: inline-block;
   align-items: center;
