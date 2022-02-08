@@ -1825,10 +1825,10 @@ img {
   .posters .images:last-child {
     margin-right: 0px;
   }
-  .posters .images:nth-child(-n + 2) {
+  .posters .images:nth-child(-n + 3) {
     margin-top: 0;
   }
-  .posters .images:nth-child(2n + 1) {
+  .posters .images:nth-child(3n + 1) {
     margin-left: 0;
   }
   .posters > .images {

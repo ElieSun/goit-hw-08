@@ -81,10 +81,10 @@
     & .images:last-child {
       margin-right: 0px;
     }
-    & .images:nth-child(-n + 2) {
+    & .images:nth-child(-n + 3) {
       margin-top: 0;
     }
-    & .images:nth-child(2n + 1) {
+    & .images:nth-child(3n + 1) {
       margin-left: 0;
     }
     & > .images {
