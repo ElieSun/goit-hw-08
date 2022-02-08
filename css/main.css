@@ -1707,10 +1707,8 @@ img {
 
 @media screen and (min-width: 480px) {
   .logo {
-    display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 163px;
     margin-bottom: 20px;
   }
 }
@@ -1760,12 +1758,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
-  .сontacts__address {
-    margin-left: 124px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .сontacts__address {
     margin-left: 76px;
@@ -1808,7 +1800,6 @@ img {
 
 @media screen and (min-width: 480px) {
   .сontacts__mail {
-    margin-left: 124px;
     display: block;
   }
 }
@@ -1892,7 +1883,6 @@ img {
 
 @media screen and (min-width: 480px) {
   .сontacts__tel {
-    margin-left: 124px;
     display: block;
   }
 }
@@ -1947,6 +1937,8 @@ img {
     justify-content: center;
     align-items: center;
     width: 235px;
+    margin-left: 165px;
+    margin-top: 0 auto;
   }
 }
 
@@ -1954,6 +1946,7 @@ img {
   .social {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 70px;
   }
 }
 
@@ -1968,6 +1961,12 @@ img {
 @media screen and (min-width: 480px) {
   .social__title {
     padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social__title {
+    padding-top: 0;
   }
 }
 
@@ -2003,6 +2002,29 @@ img {
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe {
+    margin-bottom: 60px;
+    position: absolute;
+    bottom: 50%;
+    top: 90%;
+    right: 50%;
+    transform: translateXY(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    display: flex;
+    position: absolute;
+    bottom: 50%;
+    top: 0%;
+    left: 50%;
+    transform: translateXY(-50%, -50%);
+    margin-left: 105px;
+  }
+}
+
 .subscribe__mail {
   color: white;
   font-family: Roboto;
@@ -2021,20 +2043,22 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe__mail {
+    position: absolute;
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .position-form {
     position: relative;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .subscribe {
-    margin-bottom: 60px;
-    position: absolute;
-    bottom: 50%;
-    top: 90%;
-    right: 50%;
-    transform: translateXY(-50%, -50%);
+@media screen and (min-width: 1200px) {
+  .position-form {
+    position: relative;
   }
 }
 
@@ -2084,6 +2108,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe__btn {
+    margin-left: 10px;
+  }
+}
+
 .subscribe__btn:hover {
   background: var(--active-link-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -2110,7 +2140,7 @@ img {
 @media screen and (min-width: 1200px) {
   .flex {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
   }
 }
 

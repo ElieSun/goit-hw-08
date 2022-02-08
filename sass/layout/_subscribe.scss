@@ -1,9 +1,25 @@
 .subscribe {
   padding-top: 60px;
   position: relative;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+    position: absolute;
+    bottom: 50%;
+    top: 90%;
+    right: 50%;
+    transform: translateXY(-50%, -50%);
+  }
   @media screen and (min-width: 1200px) {
+    display: flex;
+    position: absolute;
+    bottom: 50%;
+    top: 0%;
+    left: 50%;
+    transform: translateXY(-50%, -50%);
+    margin-left: 105px;
   }
 }
+
 .subscribe__mail {
   color: white;
   font-family: Roboto;
@@ -18,21 +34,16 @@
     margin-bottom: 20px;
   }
   @media screen and (min-width: 1200px) {
+    position: absolute;
+    margin-bottom: 20px;
   }
 }
 .position-form {
   @media screen and (min-width: 768px) {
     position: relative;
   }
-}
-.subscribe {
-  @media screen and (min-width: 768px) {
-    margin-bottom: 60px;
-    position: absolute;
-    bottom: 50%;
-    top: 90%;
-    right: 50%;
-    transform: translateXY(-50%, -50%);
+  @media screen and (min-width: 1200px) {
+    position: relative;
   }
 }
 .subscribe__mail--input {
@@ -55,6 +66,9 @@
   margin-top: 20px;
 }
 .subscribe__btn {
+  @media screen and (min-width: 1200px) {
+    margin-left: 10px;
+  }
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
