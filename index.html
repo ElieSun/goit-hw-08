@@ -53,16 +53,17 @@
             </ul> -->
 
 <!-- Кнопка мобильного меню -->
-            <button type="button" class="open-mob-menu"><svg class="header__navigation--button" width="20" height="20">
+            <button type="button" class="open-mob-menu" data-menu-open><svg class="header__navigation--button" width="20" height="20">
                     <use href="./img/sprite.svg#icon-menu_24px-1"></use>
                 </svg></button>
     </div>
 
     <!-- Мобильное меню -->
     
-        <div class="mob-menu">
-            <div class="container">
-            <button type="button" class="close-mob-menu">X</button>
+<div class="mob-menu is-hidden" data-menu>
+    <div class="container">
+        <div class="mob-menu-top">
+            <button type="button" class="close-mob-menu" data-menu-close>X</button>
             <ul class="list mob-menu-list">
                 <li class="mob-menu-list__item">
                     <a class="link mob-menu-list__link" href="">Студия</a>
@@ -74,12 +75,13 @@
                     <a class="link mob-menu-list__link" href="">Контакты</a>
                 </li>
             </ul>
-        
-        <div class="mob-connect">
+        </div>
+         <div class="mob-menu-bottom">
+            <div class="mob-connect mob-menu-connect">
             <a class="mob-connect__tel">+38 096 111 11 11</a>
             <a class="mob-connect__mail">info@devstudio.com</a>
-        </div>
-        <ul class="list mob-social">
+             </div>
+            <ul class="list mob-social">
             <li class="mob-social__item">
                 <a class="link mob-social__link"
                     link=""
@@ -108,9 +110,10 @@
                     rel="noopener noreferrer"
                     >Linkedin</a>
             </li>
-        </ul>
+             </ul>
         </div>
-        </div>
+    </div>
+</div>
 </header> 
     <!-- Секция заказать услугу -->
     <main>
@@ -123,7 +126,7 @@
         </section>
         <!-- Секция чем мы занимаемся -->
             <section class="activity">
-                <div class="container">
+        <div class="container">
                     <ul class="activity__list">
                         <li class="list">
                             <div class="section__icons">
@@ -529,7 +532,7 @@
     </footer> -->
 
     <!-- Modalka -->
-    <!-- <button type="button" class="modal__open" data-modal-open></button>
+     <button type="button" class="modal__open" data-modal-open></button>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close class="modal__close">
@@ -574,7 +577,7 @@
         <textarea name="user-text" id="user-text" class="form__label--text" placeholder="Введите текст"></textarea>
     </div> -->
     <!-- Чекбокс -->
-    <!-- <div class="checkbox">
+    <div class="checkbox">
         <label class="checkbox__label">
             <input class="checkbox__input" type="checkbox" name="dogovir" />
             <span class="icon"></span>
@@ -591,6 +594,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
 </body>
 
