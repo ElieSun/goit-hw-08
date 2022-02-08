@@ -2,8 +2,14 @@
   background-color: var(--color-background);
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    height: 463px;
+  }
 }
+
 .flex {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }

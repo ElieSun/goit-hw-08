@@ -2,11 +2,17 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 235px;
-    align-items: baseline;
+    // position: relative;
+    // align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
-
 .social__list {
   @media screen and (min-width: 480px) {
     display: flex;
@@ -14,8 +20,7 @@
     justify-content: center;
   }
   @media screen and (min-width: 768px) {
-    display: flex;
-    margin-left: 200px;
+    // display: flex;
   }
 }
 .social__title {
@@ -23,7 +28,6 @@
     padding-top: 60px;
   }
   @media screen and (min-width: 768px) {
-    margin-left: 234px;
   }
 }
 

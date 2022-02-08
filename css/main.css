@@ -232,13 +232,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.img-podpiska {
-  position: absolute;
-  top: auto;
-  right: 20px;
-  fill: #ffffff;
-}
-
 .modal__title {
   font-family: var(--font-family);
   font-size: 18px;
@@ -1218,6 +1211,7 @@ img {
 .service {
   padding: 118px 0;
   max-width: 1600px;
+  margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img/mob-1x.jpg);
   background-color: var(--color-background);
   text-align: center;
@@ -1258,12 +1252,6 @@ img {
 @media screen and (min-width: 1200px) {
   .service {
     padding: 200px 0;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .service {
-    max-width: 480px;
   }
 }
 
@@ -1956,8 +1944,16 @@ img {
   .social {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 235px;
-    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -1969,22 +1965,9 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .social__list {
-    display: flex;
-    margin-left: 200px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .social__title {
     padding-top: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .social__title {
-    margin-left: 234px;
   }
 }
 
@@ -2017,6 +2000,7 @@ img {
 
 .subscribe {
   padding-top: 60px;
+  position: relative;
 }
 
 .subscribe__mail {
@@ -2033,13 +2017,30 @@ img {
 
 @media screen and (min-width: 480px) {
   .subscribe__mail {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .position-form {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe {
+    margin-bottom: 60px;
+    position: absolute;
+    bottom: 50%;
+    top: 90%;
+    right: 50%;
+    transform: translateXY(-50%, -50%);
   }
 }
 
 .subscribe__mail--input {
+  height: 50px;
   padding-left: 16px;
-  position: absolute;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -2048,6 +2049,19 @@ img {
   min-width: 358px;
   min-height: 50px;
   color: white;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__mail--input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__mail--input {
+    width: 358px;
+  }
 }
 
 .subscribe__btn {
@@ -2061,8 +2075,8 @@ img {
   background: var(--color-letter-blue);
   border-radius: 4px;
   border: none;
-  transform: translateX(185%);
   padding: 0 62px 0 29px;
+  margin-top: 20px;
   min-width: 200px;
   min-height: 50px;
   transition-property: background-color, box-shadow;
@@ -2075,15 +2089,29 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.img-podpiska {
+  position: absolute;
+  margin-left: 10px;
+  fill: #ffffff;
+}
+
 .footer {
   background-color: var(--color-background);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.flex {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 463px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .masters-paragraf {
