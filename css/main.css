@@ -10,7 +10,7 @@
   --font-family-header: "Raleway", sans-serif;
 }
 
-.checkbox__label {
+.checkbox__label, .header__navigation, .header__navigation-main {
   display: flex;
   align-items: center;
 }
@@ -437,8 +437,8 @@ img {
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   position: absolute;
   top: 50%;
@@ -446,6 +446,13 @@ img {
   transform: translate(-50%, -50%);
   border-radius: 5px;
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__close {
@@ -474,10 +481,18 @@ img {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 14);
   letter-spacing: 0.03em;
   margin-left: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .dogovir-label {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    margin-left: 20px;
+  }
 }
 
 /* --------------------Чекбокс----------------------- */
@@ -574,10 +589,18 @@ img {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 14);
   letter-spacing: 0.03em;
-  min-width: 200px;
+}
+
+@media screen and (min-width: 1200px) {
+  .link-dogovir {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    min-width: 200px;
+  }
 }
 
 .wrap__input--people {
@@ -606,12 +629,18 @@ img {
 
 .wrap__input {
   padding-left: 35px;
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid #999999;
   border-radius: 4px;
   color: #000000;
   outline: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .wrap__input {
+    width: 448px;
+  }
 }
 
 .wrap__input:focus {
@@ -755,8 +784,20 @@ img {
   display: flex;
 }
 
+.mob-social__item {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .mob-social__item:not(:last-child) {
   margin-right: 10px;
+}
+
+.mob-social__item:last-child {
+  border: none;
+}
+
+.mob-social__item:first-child {
+  padding-left: 0;
 }
 
 .mob-social__link {
@@ -783,6 +824,10 @@ img {
 
 .close-mob-menu:hover .close-menu__img {
   fill: #188ce8;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 .flex-container {
@@ -853,6 +898,321 @@ img {
     line-height: calc(24 / 28);
     letter-spacing: 0.03em;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .header__navigation-contact {
+    display: inline;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__navigation-contact {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.categories__navigation-main .header__navigation-tel:not(:last-child) {
+  margin-right: 0;
+}
+
+.header__navigation-mail {
+  margin-right: 50px;
+}
+
+.link-mail__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.link-mail__icon:hover {
+  fill: #188ce8;
+}
+
+.link-tel__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.link-tel__icon:hover {
+  fill: #188ce8;
+}
+
+.categories__navigation-main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 93px;
+}
+
+.categories__navigation-main .header__navigation-item:not(:last-child) {
+  margin-right: 0;
+}
+
+.header__navigation-item {
+  margin-left: 50px;
+}
+
+/* Эффекты для интерактивных элементов */
+/* Ссылки в шапке */
+.header__navigation-link {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__navigation-link {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--section-title-color);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header__navigation-link:hover, .header__navigation-link:focus, .header__navigation-link:active {
+    color: var(--color-letter-blue);
+  }
+}
+
+.header-studio {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-studio {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--color-letter-blue);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+/* Фокус логотипа */
+.sait-logo:focus {
+  color: var(--active-link-color);
+  font-family: var(--font-family-header);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+.header-studio__link {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-studio__link {
+    position: relative;
+    color: #2196f3;
+  }
+  .header-studio__link::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    position: absolute;
+    background-color: #2196f3;
+    left: 0px;
+    bottom: 0px;
+  }
+}
+
+.header-portfolio {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--color-letter-blue);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.studio-portfolio {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--section-title-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.studio-portfolio:focus, .studio-portfolio:hover, .studio-portfolio:active {
+  color: var(--color-letter-blue);
+}
+
+@media screen and (min-width: 480px) {
+  .link-mail {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .link-mail {
+    color: var(--section-paragraf-color);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .link-mail:focus, .link-mail:hover, .link-mail:active {
+    color: var(--color-letter-blue);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link-mail {
+    display: flex;
+    align-items: center;
+    color: var(--section-paragraf-color);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .link-mail:focus, .link-mail:hover, .link-mail:active {
+    color: var(--color-letter-blue);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .link-tel {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .link-tel {
+    color: var(--section-paragraf-color);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .link-tel:focus, .link-tel:hover, .link-tel:active {
+    color: var(--color-letter-blue);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link-tel {
+    display: flex;
+    align-items: center;
+    color: var(--section-paragraf-color);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .link-tel:focus, .link-tel:hover, .link-tel:active {
+    color: var(--color-letter-blue);
+  }
+}
+
+.header-studio {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--color-letter-blue);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-portfolio {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--color-letter-blue);
+}
+
+.sait-logo:focus {
+  color: var(--active-link-color);
+  font-family: var(--font-family-header);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+/* Часть цвета логотипа */
+.sait-logo__blue {
+  color: var(--color-letter-blue);
+  font-family: var(--font-family-header);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(26 / 31);
+  letter-spacing: 0.02em;
+}
+
+.sait-logo__black {
+  color: var(--section-title-color);
+  font-family: var(--font-family-header);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(26 / 31);
+  letter-spacing: 0.02em;
 }
 
 .service {
