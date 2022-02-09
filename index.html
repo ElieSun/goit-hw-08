@@ -27,7 +27,7 @@
                 <a href="./index.html" class="sait-logo"><span class="sait-logo__blue">Web</span>
                     <span class="sait-logo__black">Studio</span></a>
                 <!-- Кнопка мобильного меню -->
-<button type="button" class="open-mob-menu" data-menu-open><svg class="header__navigation--button" width="20"
+<button type="button" class="open-mob-menu" data-menu-open aria-expanded="false" aria-controls="menu"><svg class="header__navigation--button" width="20"
         height="20">
         <use href="./img/sprite.svg#icon-menu_24px-1"></use>
     </svg></button>
@@ -61,7 +61,7 @@
 
     <!-- Мобильное меню -->  
 
-<div class="mob-menu is-hidden" data-menu>
+<div class="mob-menu is-hidden" data-menu id="menu">
     <div class="container">
         <div class="mob-menu-top">
             <button type="button" class="close-mob-menu" data-menu-close><svg class="close-menu__img"width="11" height="11">
