@@ -178,7 +178,6 @@ img {
 @media screen and (min-width: 768px) {
   .buttons__list {
     margin-bottom: 40px;
-    margin-right: 79px;
   }
 }
 
@@ -2446,53 +2445,39 @@ img {
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  flex-grow: 1;
 }
 
 /* Студия Список абзацев*/
 .images {
+  margin-right: 30px;
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 480px) {
   .images {
     width: 450px;
-    height: 405px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .images {
     width: 354px;
-    height: 440px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .images {
     width: 370px;
-    height: 440px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .posters {
     display: flex;
-    flex-wrap: wrap;
-  }
-  .posters .images:last-child {
-    margin-right: 0px;
-  }
-  .posters .images:nth-child(-n + 3) {
-    margin-top: 0;
-  }
-  .posters .images:nth-child(2n + 1) {
-    margin-left: 0;
-  }
-  .posters > .images {
-    background: #ffffff;
-    flex-basis: calc((100% - 90px) / 2);
-    margin-left: 30px;
-    margin-top: 30px;
+    align-items: center;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 }
 
@@ -2500,21 +2485,8 @@ img {
   .posters {
     display: flex;
     flex-wrap: wrap;
-  }
-  .posters .images:last-child {
-    margin-right: 0px;
-  }
-  .posters .images:nth-child(-n + 3) {
-    margin-top: 0;
-  }
-  .posters .images:nth-child(3n + 1) {
-    margin-left: 0;
-  }
-  .posters > .images {
-    background: #ffffff;
-    flex-basis: calc((100% - 90px) / 3);
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-right: -60px;
+    margin-bottom: -60px;
   }
 }
 
@@ -2562,11 +2534,6 @@ img {
   margin-left: 50px;
 }
 
-.masters {
-  position: relative;
-  overflow: hidden;
-}
-
 .masters__text {
   position: absolute;
   top: 0px;
@@ -2591,6 +2558,8 @@ img {
 }
 
 .images__link {
+  flex-direction: column;
+  height: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2598,13 +2567,9 @@ img {
 
 .images__link:focus, .images__link:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.text-img {
-  padding: 20px 24px 20px 24px;
-  border-bottom: 1px solid #ececec;
-  border-left: 1px solid #ececec;
-  border-right: 1px solid #ececec;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .footer-sections {
@@ -2628,11 +2593,6 @@ img {
 
 .tel-svg:hover {
   fill: #188ce8;
-}
-
-.tel-svg .masters {
-  position: relative;
-  overflow: hidden;
 }
 
 .tel-svg .masters__text {
@@ -2693,11 +2653,6 @@ img {
 /* ----------Выплывающий текст над секцией---------- */
 .images:hover .masters__text {
   transform: translateY(0);
-}
-
-.masters {
-  position: relative;
-  overflow: hidden;
 }
 
 .masters__text {
