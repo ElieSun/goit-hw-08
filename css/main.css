@@ -853,8 +853,6 @@ img {
 
 @media screen and (min-width: 480px) {
   .sait-logo {
-    width: 134px;
-    margin-left: 15px;
     margin-top: 16px;
     margin-bottom: 16px;
     display: flex;
@@ -1221,6 +1219,10 @@ img {
 
 .header__navigation-item {
   margin-left: 50px;
+}
+
+.header__navigation-item:nth-child(1) {
+  margin-left: 0;
 }
 
 /* Эффекты для интерактивных элементов */

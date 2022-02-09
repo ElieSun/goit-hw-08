@@ -8,8 +8,6 @@
 }
 .sait-logo {
   @media screen and (min-width: 480px) {
-    width: 134px;
-    margin-left: 15px;
     margin-top: 16px;
     margin-bottom: 16px;
     display: flex;
@@ -339,6 +337,9 @@
 }
 .header__navigation-item {
   margin-left: 50px;
+  &:nth-child(1) {
+    margin-left: 0;
+  }
 }
 .header__navigation {
   @extend %flex-align;
