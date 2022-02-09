@@ -17,19 +17,20 @@
   }
 }
 .open-mob-menu {
-  @media screen and (max-width: 768px) {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    width: 30px;
-    height: 30px;
-    background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0);
-    top: 8px;
-    right: 8px;
-    &:hover .header__navigation--button {
-      fill: #188ce8;
-    }
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0);
+  top: 8px;
+  right: 8px;
+  &:hover .header__navigation--button {
+    fill: #188ce8;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
   @media screen and (min-width: 1200px) {
     display: none;
@@ -64,13 +65,7 @@
   @media screen and (max-width: 480px) {
     display: none;
   }
-  @media screen and (min-width: 768px) {
-    // display: flex;
-    // flex-wrap: wrap;
-    // display: none;
-    // display: inline;
-    // margin-left: auto;
-  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;
@@ -88,16 +83,15 @@
   margin-right: 0;
 }
 .header__navigation-mail {
-  margin-right: 50px;
   @media screen and (max-width: 320px) {
     display: none;
   }
   @media screen and (max-width: 480px) {
     display: none;
   }
-  @media screen and (max-width: 768px) {
-    // display: flex;
-    // flex-wrap: wrap;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
   }
 }
 .link-mail__icon {
@@ -118,7 +112,6 @@
 .categories__navigation-main {
   display: flex;
   flex-wrap: wrap;
-
   margin-left: 93px;
 }
 .categories__navigation-main .header__navigation-item:not(:last-child) {
@@ -324,7 +317,7 @@
   @media screen and (min-width: 748px) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 93px;
+    margin-left: 88px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -404,7 +397,7 @@
 }
 
 .link-mail {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
@@ -455,7 +448,7 @@
 }
 
 .link-tel {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
