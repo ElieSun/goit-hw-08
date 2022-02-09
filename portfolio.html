@@ -35,16 +35,16 @@
                     </svg></button>
             </div>
 
-                <!-- <ul class="categories__navigation-main">
+                 <ul class="categories__navigation-main">
                     <li class="header__navigation-item"><a href="./index.html" class="studio-portfolio">Студия</a></li>
                     <li class="header__navigation-item"><a href="./portfolio.html" class="header-portfolio header-portfolio__link">Портофолио</a>
                     </li>
                         <li class="header__navigation-item"><a href="" class="header__navigation-link">Контакты</a></li>
                         </ul>
-                        </nav> -->
+                        </nav> 
 
 
-            <!-- <ul class="header__navigation-contact">
+             <ul class="header__navigation-contact">
                 <li class="header__navigation-mail">
                     <a href="mailto:info@devstudio.com" class="link-mail">
                         <svg class="link-mail__icon" width="20" height="20">
@@ -58,7 +58,7 @@
                         </svg>
                         +380961111111</a>
                 </li>
-            </ul> -->
+            </ul>
         </div>
 
         <!-- Мобильное меню -->
@@ -75,7 +75,7 @@
                             <a class="link mob-menu-list__link" href="./index.html">Студия</a>
                         </li>
                         <li class="mob-menu-list__item">
-                            <a class="link mob-menu-list__link" href="./portfolio.html">Портфолио</a>
+                            <a class="portfolio mob-menu-list__portfolio" href="./portfolio.html">Портфолио</a>
                         </li>
                         <li class="mob-menu-list__item">
                             <a class="link mob-menu-list__link" href="">Контакты</a>
@@ -385,16 +385,18 @@
                 </ul>
             </div>
     <!-- Форма подписки -->
-    <form action="#" class="subscribe">
-        <label class="subscribe__mail" for="e-mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
-        <input type="text" class="subscribe__mail--input" name="e-mail" placeholder="E-mail" required minlength="2"
-            id="e-mail" />
-        <button type="submit" class="subscribe__btn">Подписаться
-            <svg class="img-podpiska" width="24" height="24">
-                <use href="./img/sprite.svg#icon-icon-send-1"></use>
-            </svg>
-        </button>
-    </form>
+    <div class="position-form">
+        <form action="#" class="subscribe">
+            <label class="subscribe__mail" for="e-mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+            <input type="text" class="subscribe__mail--input" name="e-mail" placeholder="E-mail" required minlength="2"
+                id="e-mail" />
+            <button type="submit" class="subscribe__btn">Подписаться
+                <svg class="img-podpiska" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-icon-send-1"></use>
+                </svg>
+            </button>
+        </form>
+    </div>
     </div>
     </footer>
     <script src="./js/menu.js"></script>

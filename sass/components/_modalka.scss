@@ -151,7 +151,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: calc(14 / 14);
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -185,7 +185,7 @@
   @media screen and (min-width: 1200px) {
     width: 448px;
   }
-  padding-left: 35px;
+  padding-left: 40px;
   width: 370px;
   height: 40px;
   border: 1px solid #999999;

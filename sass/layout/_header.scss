@@ -250,61 +250,61 @@
     }
   }
 }
-// .header-portfolio__link {
-//   position: relative;
-//   color: #2196f3;
-// }
-// .header-portfolio__link::after {
-//   content: "";
-//   width: 100%;
-//   height: 5px;
-//   border-radius: 2px;
-//   position: absolute;
-//   background-color: #2196f3;
-//   left: 0px;
-//   bottom: 0px;
-// }
-// .categories__navigation-main {
-//   display: flex;
-//   flex-wrap: wrap;
+.header-portfolio__link {
+  position: relative;
+  color: #2196f3;
+}
+.header-portfolio__link::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  position: absolute;
+  background-color: #2196f3;
+  left: 0px;
+  bottom: 0px;
+}
+.categories__navigation-main {
+  display: flex;
+  flex-wrap: wrap;
 
-//   margin-left: 93px;
-// }
-// .categories__navigation-main .header__navigation-item:not(:last-child) {
-//   margin-right: 0;
-// }
-// .header__navigation-item {
-//   margin-left: 50px;
-// }
-// .header__navigation {
-//   @extend %flex-align;
-// }
-// .header__navigation-main {
-//   @extend %flex-align;
-// }
-// /* Эффекты для интерактивных элементов */
-// /* Ссылки в шапке */
-// .header__navigation-link {
-//   font-family: var(--font-family);
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: calc(16 / 14);
-//   letter-spacing: 0.02em;
-//   color: var(--section-title-color);
-//   display: block;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
+  margin-left: 93px;
+}
+.categories__navigation-main .header__navigation-item:not(:last-child) {
+  margin-right: 0;
+}
+.header__navigation-item {
+  margin-left: 50px;
+}
+.header__navigation {
+  @extend %flex-align;
+}
+.header__navigation-main {
+  @extend %flex-align;
+}
+/* Эффекты для интерактивных элементов */
+/* Ссылки в шапке */
+.header__navigation-link {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--section-title-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-//   transition-property: color;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   &:hover,
-//   &:focus,
-//   &:active {
-//     color: var(--color-letter-blue);
-//   }
-// }
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-letter-blue);
+  }
+}
 
 .header-portfolio {
   font-family: var(--font-family);
