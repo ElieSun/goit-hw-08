@@ -3,7 +3,7 @@
   // position: relative;
   @media screen and (min-width: 768px) {
     margin-bottom: 60px;
-    position: absolute;
+    // position: absolute;
     bottom: 50%;
     top: 90%;
     right: 50%;
@@ -11,7 +11,7 @@
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    position: absolute;
+    // position: absolute;
     bottom: 50%;
     top: 0%;
     left: 50%;
@@ -37,8 +37,14 @@
     margin-left: 131px;
     margin-bottom: 20px;
   }
+  @media screen and (min-width: 768px) {
+    // position: absolute;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 282px;
+  }
   @media screen and (min-width: 1200px) {
-    position: absolute;
+    // position: absolute;
     margin-bottom: 20px;
   }
 }
@@ -64,6 +70,7 @@
   }
   @media screen and (min-width: 768px) {
     width: 450px;
+    margin-left: 166px;
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
@@ -86,6 +93,9 @@
   }
   @media screen and (min-width: 480px) {
     margin-left: 140px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 291px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 10px;
