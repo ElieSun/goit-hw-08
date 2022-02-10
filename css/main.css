@@ -846,12 +846,6 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 @media screen and (min-width: 480px) {
   .sait-logo {
     margin-top: 16px;
@@ -1951,17 +1945,6 @@ img {
   text-align: center;
 }
 
-.contacts {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) {
-  .contacts {
-    margin-right: 165px;
-  }
-}
-
 @media screen and (min-width: 320px) {
   .flex {
     display: flex;
@@ -1980,7 +1963,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .flex {
-    text-align: center;
     display: flex;
   }
 }
@@ -2014,7 +1996,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .logo {
-    margin-left: 115px;
+    margin-left: 0;
     margin-bottom: 20px;
   }
 }
@@ -2022,6 +2004,14 @@ img {
 @media screen and (min-width: 1200px) {
   .logo {
     margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .сontacts {
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -2061,12 +2051,6 @@ img {
   .сontacts__address {
     align-items: center;
     flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .сontacts__address {
-    margin-left: 76px;
   }
 }
 
@@ -2120,8 +2104,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .сontacts__mail {
-    margin-left: 76px;
-    display: block;
+    margin-left: 0px;
   }
 }
 
@@ -2158,12 +2141,6 @@ img {
 }
 
 @media screen and (min-width: 480px) {
-  .сontacts__address {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .сontacts__address {
     display: block;
   }
@@ -2211,8 +2188,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .сontacts__tel {
-    margin-left: 76px;
-    display: block;
+    margin-left: 0px;
   }
 }
 
@@ -2256,11 +2232,7 @@ img {
   .social {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     width: 235px;
-    margin-left: 165px;
-    margin-top: 0 auto;
   }
 }
 
@@ -2268,7 +2240,6 @@ img {
   .social {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 70px;
   }
 }
 
@@ -2359,6 +2330,13 @@ img {
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .position {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -2503,7 +2481,7 @@ img {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .subscribe__btn {
     margin-left: 140px;
   }
