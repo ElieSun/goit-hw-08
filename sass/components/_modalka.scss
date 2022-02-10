@@ -21,7 +21,9 @@
   border-radius: 5px;
   padding: 40px;
 }
-
+.modal__open {
+  display: none;
+}
 .modal__close {
   width: 30px;
   height: 30px;
@@ -54,7 +56,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: calc(24 / 14);
-    margin-left: 20px;
+    // margin-left: 20px;
   }
 }
 /* --------------------Чекбокс----------------------- */
@@ -68,6 +70,7 @@
 .checkbox__label {
   @extend %flex-align;
 }
+
 .icon {
   content: "";
   background-repeat: no-repeat;
@@ -157,7 +160,7 @@
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
-    min-width: 200px;
+    // min-width: 200px;
   }
 }
 .wrap__input--people {

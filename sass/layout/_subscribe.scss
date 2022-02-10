@@ -10,13 +10,17 @@
     transform: translateXY(-50%, -50%);
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
+    // display: flex;
     // position: absolute;
-    bottom: 50%;
-    top: 0%;
-    left: 50%;
-    transform: translateXY(-50%, -50%);
-    margin-left: 105px;
+    // position: relative;
+    // bottom: 50%;
+    // top: 0%;
+    // left: 50%;
+    // transform: translateXY(-50%, -50%);
+    // margin-left: 105px;
+    width: 570px;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -46,6 +50,7 @@
   @media screen and (min-width: 1200px) {
     // position: absolute;
     margin-bottom: 20px;
+    margin-left: 0;
   }
 }
 .position-form {
@@ -58,7 +63,7 @@
     position: relative;
   }
   @media screen and (min-width: 1200px) {
-    position: relative;
+    // position: relative;
   }
 }
 .subscribe__mail--input {
@@ -74,6 +79,7 @@
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
+    margin-left: 0;
   }
   height: 50px;
   padding-left: 16px;
@@ -99,6 +105,7 @@
   }
   @media screen and (min-width: 1200px) {
     margin-left: 10px;
+    position: absolute;
   }
   font-family: inherit;
   font-style: normal;

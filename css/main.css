@@ -447,6 +447,10 @@ img {
   }
 }
 
+.modal__open {
+  display: none;
+}
+
 .modal__close {
   width: 30px;
   height: 30px;
@@ -483,7 +487,6 @@ img {
   .dogovir-label {
     font-size: 14px;
     line-height: calc(24 / 14);
-    margin-left: 20px;
   }
 }
 
@@ -591,7 +594,6 @@ img {
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
-    min-width: 200px;
   }
 }
 
@@ -2245,6 +2247,7 @@ img {
   .social {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 70px;
   }
 }
 
@@ -2372,12 +2375,9 @@ img {
 
 @media screen and (min-width: 1200px) {
   .subscribe {
-    display: flex;
-    bottom: 50%;
-    top: 0%;
-    left: 50%;
-    transform: translateXY(-50%, -50%);
-    margin-left: 105px;
+    width: 570px;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -2417,6 +2417,7 @@ img {
 @media screen and (min-width: 1200px) {
   .subscribe__mail {
     margin-bottom: 20px;
+    margin-left: 0;
   }
 }
 
@@ -2429,12 +2430,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .position-form {
-    position: relative;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .position-form {
     position: relative;
   }
@@ -2474,6 +2469,7 @@ img {
 @media screen and (min-width: 1200px) {
   .subscribe__mail--input {
     width: 358px;
+    margin-left: 0;
   }
 }
 
@@ -2518,6 +2514,7 @@ img {
 @media screen and (min-width: 1200px) {
   .subscribe__btn {
     margin-left: 10px;
+    position: absolute;
   }
 }
 
@@ -2544,11 +2541,9 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .flex {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 252px;
   }
 }
 
@@ -2556,6 +2551,8 @@ img {
   .flex {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
   }
 }
 
