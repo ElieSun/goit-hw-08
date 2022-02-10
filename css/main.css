@@ -10,7 +10,7 @@
   --font-family-header: "Raleway", sans-serif;
 }
 
-.checkbox__label, .header__navigation, .header__navigation-main {
+.header__navigation, .header__navigation-main {
   display: flex;
   align-items: center;
 }
@@ -429,8 +429,6 @@ img {
 }
 
 .modal {
-  width: 450px;
-  height: 609px;
   background-color: #ffffff;
   position: absolute;
   top: 50%;
@@ -438,6 +436,20 @@ img {
   transform: translate(-50%, -50%);
   border-radius: 5px;
   padding: 40px;
+}
+
+@media screen and (min-width: 320px) {
+  .modal {
+    width: 300px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -478,13 +490,31 @@ img {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: calc(14 / 14);
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
-  margin-left: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .dogovir-label {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .dogovir-label {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dogovir-label {
+    margin-left: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .dogovir-label {
+    margin-left: 10px;
     font-size: 14px;
     line-height: calc(24 / 14);
   }
@@ -496,14 +526,44 @@ img {
   position: absolute;
 }
 
+.checkbox__label {
+  display: flex;
+  align-items: center;
+}
+
 .icon {
   content: "";
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
   position: absolute;
+  left: 27px;
   border: 2px solid black;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 320px) {
+  .icon {
+    left: 40px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .icon {
+    left: 29px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .icon {
+    left: 29px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon {
+    left: 39px;
+  }
 }
 
 .checkbox__input:checked + .icon {
@@ -623,12 +683,23 @@ img {
 
 .wrap__input {
   padding-left: 40px;
-  width: 370px;
   height: 40px;
   border: 1px solid #999999;
   border-radius: 4px;
   color: #000000;
   outline: none;
+}
+
+@media screen and (min-width: 320px) {
+  .wrap__input {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .wrap__input {
+    width: 370px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

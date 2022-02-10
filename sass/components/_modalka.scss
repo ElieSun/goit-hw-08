@@ -7,12 +7,6 @@
   transition: opacity 500ms, visibility 500ms;
 }
 .modal {
-  width: 450px;
-  height: 609px;
-  @media screen and (min-width: 1200px) {
-    width: 528px;
-    min-height: 581px;
-  }
   background-color: #ffffff;
   position: absolute;
   top: 50%;
@@ -20,6 +14,18 @@
   transform: translate(-50%, -50%);
   border-radius: 5px;
   padding: 40px;
+  @media screen and (min-width: 320px) {
+    width: 300px;
+    height: 609px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 .modal__open {
   display: none;
@@ -50,10 +56,20 @@
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: calc(14 / 14);
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
-  margin-left: 20px;
+  // margin-left: 20px;
+  @media screen and (min-width: 320px) {
+    margin-left: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    margin-left: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
   @media screen and (min-width: 1200px) {
+    margin-left: 10px;
     font-size: 14px;
     line-height: calc(24 / 14);
     // margin-left: 20px;
@@ -68,7 +84,8 @@
   position: absolute;
 }
 .checkbox__label {
-  @extend %flex-align;
+  display: flex;
+  align-items: center;
 }
 
 .icon {
@@ -77,9 +94,22 @@
   width: 16px;
   height: 15px;
   position: absolute;
-
+  // left: 39px;
+  left: 27px;
   border: 2px solid black;
   border-radius: 4px;
+  @media screen and (min-width: 320px) {
+    left: 40px;
+  }
+  @media screen and (min-width: 480px) {
+    left: 29px;
+  }
+  @media screen and (min-width: 768px) {
+    left: 29px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 39px;
+  }
 }
 .checkbox__input:checked + .icon {
   background-color: var(--color-letter-blue);
@@ -185,11 +215,16 @@
   margin-bottom: 10px;
 }
 .wrap__input {
+  @media screen and (min-width: 320px) {
+    width: 220px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
   @media screen and (min-width: 1200px) {
     width: 448px;
   }
   padding-left: 40px;
-  width: 370px;
   height: 40px;
   border: 1px solid #999999;
   border-radius: 4px;
