@@ -6,6 +6,11 @@
   }
 }
 .flex {
+  @media screen and (min-width: 320px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   @media screen and (min-width: 480px) {
     text-align: center;
   }
@@ -19,7 +24,14 @@
 }
 .logo {
   display: block;
-
+  @media screen and (min-width: 320px) {
+    // display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    // margin-left: 163px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
   @media screen and (min-width: 480px) {
     // display: flex;
     align-items: center;
@@ -57,8 +69,9 @@
   }
 }
 .сontacts__address {
-  @media screen and (min-width: 480px) {
-    // margin-left: 124px;
+  @media screen and (min-width: 320px) {
+    align-items: center;
+    flex-wrap: wrap;
   }
   @media screen and (min-width: 768px) {
     margin-left: 76px;
@@ -89,6 +102,11 @@
   }
 }
 .сontacts__mail {
+  @media screen and (min-width: 320px) {
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 30px;
+  }
   @media screen and (min-width: 480px) {
     // margin-left: 124px;
     display: block;
@@ -152,6 +170,11 @@
   }
 }
 .сontacts__tel {
+  @media screen and (min-width: 320px) {
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 40px;
+  }
   @media screen and (min-width: 480px) {
     // margin-left: 124px;
     display: block;
