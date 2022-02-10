@@ -1998,6 +1998,7 @@ img {
   .logo {
     margin-left: 0;
     margin-bottom: 20px;
+    margin-left: 115px;
   }
 }
 
@@ -2010,8 +2011,6 @@ img {
 @media screen and (min-width: 768px) {
   .сontacts {
     margin-left: 0;
-    display: flex;
-    flex-wrap: wrap;
   }
 }
 
@@ -2051,6 +2050,12 @@ img {
   .сontacts__address {
     align-items: center;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .сontacts__address {
+    margin-left: 76px;
   }
 }
 
@@ -2105,6 +2110,7 @@ img {
 @media screen and (min-width: 768px) {
   .сontacts__mail {
     margin-left: 0px;
+    margin-left: 125px;
   }
 }
 
@@ -2189,6 +2195,7 @@ img {
 @media screen and (min-width: 768px) {
   .сontacts__tel {
     margin-left: 0px;
+    margin-left: 135px;
   }
 }
 
@@ -2230,8 +2237,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .social {
-    display: flex;
-    flex-wrap: wrap;
     width: 235px;
   }
 }
@@ -2337,6 +2342,17 @@ img {
   .position {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .position {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 

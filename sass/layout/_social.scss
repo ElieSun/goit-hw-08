@@ -1,10 +1,11 @@
 .social {
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
     // justify-content: center;
     // align-items: center;
     width: 235px;
+
     // margin-left: 165px;
     // margin-top: 0 auto;
     // position: relative;
@@ -95,6 +96,13 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
