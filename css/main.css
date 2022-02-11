@@ -474,7 +474,7 @@ img {
   right: 8px;
 }
 
-.modal__close:hover .img-close-modal {
+.modal__close:hover .modal__close--img {
   fill: #188ce8;
 }
 
