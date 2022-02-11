@@ -986,13 +986,7 @@ img {
   }
 }
 
-@media screen and (max-width: 320px) {
-  .header__navigation-contact {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) {
   .header__navigation-contact {
     display: none;
   }
@@ -1011,13 +1005,7 @@ img {
   }
 }
 
-@media screen and (max-width: 320px) {
-  .header__navigation-tel {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .header__navigation-tel {
     display: none;
   }
