@@ -994,8 +994,15 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .header__navigation-contact {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__navigation-contact {
+    display: block;
     margin-left: auto;
   }
 }
