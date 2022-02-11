@@ -76,8 +76,8 @@
 }
 .posters {
   @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     margin-right: -30px;
     margin-bottom: -30px;
 
@@ -177,6 +177,8 @@
   }
 }
 .images__link {
+  display: flex;
+  flex-grow: 1;
   flex-direction: column;
   height: 100%;
   transition-property: box-shadow;

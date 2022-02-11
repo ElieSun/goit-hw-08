@@ -2708,8 +2708,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .posters {
-    display: flex;
-    align-items: center;
     margin-right: -30px;
     margin-bottom: -30px;
   }
@@ -2792,6 +2790,8 @@ img {
 }
 
 .images__link {
+  display: flex;
+  flex-grow: 1;
   flex-direction: column;
   height: 100%;
   transition-property: box-shadow;
