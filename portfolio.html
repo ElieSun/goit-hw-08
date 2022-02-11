@@ -329,9 +329,11 @@
             
         </section>        
     </main>
+    
     <!-- Подвал -->
-    <footer class="footer">
-        <div class="container flex">
+<footer class="footer">
+    <div class="container flex">
+        <div class="position">
             <div class="сontacts">
                 <a href="./index.html" class="logo"><span class="logo__blue">Web</span>
                     <span class="logo__white">Studio</span></a>
@@ -343,7 +345,10 @@
                     <a href="tel:+380961111111" class="сontacts__tel">+380961111111</a>
                 </address>
             </div>
+
             <div class="social">
+
+
                 <h3 class="social__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
                 <ul class="social__list">
                     <li class="social__list--network">
@@ -376,21 +381,23 @@
                     </li>
                 </ul>
             </div>
-    <!-- Форма подписки -->
-    <div class="position-form">
-        <form action="#" class="subscribe">
-            <label class="subscribe__mail" for="e-mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
-            <input type="text" class="subscribe__mail--input" name="e-mail" placeholder="E-mail" required minlength="2"
-                id="e-mail" />
-            <button type="submit" class="subscribe__btn">Подписаться
-                <svg class="img-podpiska" width="24" height="24">
-                    <use href="./img/sprite.svg#icon-icon-send-1"></use>
-                </svg>
-            </button>
-        </form>
+        </div>
+        <!-- Форма подписки -->
+        <div class="position-form">
+            <form action="#" class="subscribe">
+                <label class="subscribe__mail" for="e-mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+                <input type="text" class="subscribe__mail--input" name="e-mail" placeholder="E-mail" required
+                    minlength="2" id="e-mail" />
+                <button type="submit" class="subscribe__btn">Подписаться
+                    <svg class="img-podpiska" width="24" height="24">
+                        <use href="./img/sprite.svg#icon-icon-send-1"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
     </div>
-    </div>
-    </footer>
+</footer>
+
     <script src="./js/menu.js"></script>
 </body>
 </html>
