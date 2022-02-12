@@ -53,6 +53,18 @@
 }
 
 .buttons__list--grey {
+  @media screen and (min-width: 320px) {
+    margin-right: 4px;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 480px) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 500;
@@ -87,6 +99,7 @@
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
+    margin-left: 79px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;

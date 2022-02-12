@@ -160,6 +160,27 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 320px) {
+  .buttons__list--grey {
+    margin-right: 4px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .buttons__list--grey {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buttons__list--grey {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
 .buttons__list--grey:hover, .buttons__list--grey:focus {
   background-color: var(--color-letter-blue);
   color: var(--color-letter-white);
@@ -180,6 +201,7 @@ img {
 @media screen and (min-width: 768px) {
   .buttons__list {
     margin-bottom: 40px;
+    margin-left: 79px;
   }
 }
 
@@ -1020,13 +1042,15 @@ img {
   font-family: var(--font-family-header);
   font-style: normal;
   font-weight: bold;
+  font-size: 24px;
+  line-height: calc(24 / 28);
+  letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .sait-logo__black {
-    font-size: 24px;
-    line-height: calc(24 / 28);
-    letter-spacing: 0.03em;
+    font-size: 26px;
+    line-height: calc(26 / 31);
   }
 }
 
@@ -1616,6 +1640,22 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .service__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-letter-white);
+    max-width: 696px;
+    margin: 0 auto 30px auto;
+  }
+}
+
 .service__button {
   cursor: pointer;
   font-family: inherit;
@@ -1718,6 +1758,7 @@ img {
 @media screen and (min-width: 1200px) {
   .working {
     display: block;
+    padding-bottom: 94px;
   }
 }
 
@@ -1945,7 +1986,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .clients__title {
-    padding-bottom: 50px;
+    padding-bottom: 0;
   }
 }
 
@@ -2088,6 +2129,8 @@ img {
 @media screen and (min-width: 1200px) {
   .flex {
     text-align: left;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -2116,13 +2159,14 @@ img {
   .logo {
     margin-left: 0;
     margin-bottom: 20px;
-    margin-left: 115px;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .logo {
     margin-left: 10px;
+    text-align: left;
   }
 }
 
@@ -2173,13 +2217,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .сontacts__address {
-    margin-left: 76px;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .сontacts__address {
     margin-left: 10px;
+    text-align: left;
   }
 }
 
@@ -2228,13 +2273,14 @@ img {
 @media screen and (min-width: 768px) {
   .сontacts__mail {
     margin-left: 0px;
-    margin-left: 125px;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .сontacts__mail {
     margin-left: 10px;
+    text-align: left;
   }
 }
 
@@ -2313,13 +2359,14 @@ img {
 @media screen and (min-width: 768px) {
   .сontacts__tel {
     margin-left: 0px;
-    margin-left: 135px;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .сontacts__tel {
     margin-left: 10px;
+    text-align: left;
   }
 }
 
@@ -2551,6 +2598,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .position-form {
+    margin-right: 0 auto;
+  }
+}
+
 .subscribe__mail--input {
   height: 50px;
   padding-left: 16px;
@@ -2735,7 +2788,6 @@ img {
   border-bottom: 1px solid #ececec;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   flex-grow: 1;
 }
 
@@ -2831,15 +2883,55 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
   color: #ffffff;
   font-weight: 400;
-  font-size: 18px;
-  line-height: calc(28 / 18);
-  letter-spacing: 0.03em;
-  padding: 40px;
   height: 100%;
   transform: translateY(100%);
   transition: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 320px) {
+  .masters__text {
+    font-size: 12px;
+    line-height: calc(24 / 12);
+    letter-spacing: 0.03em;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .masters__text {
+    font-size: 12px;
+    line-height: calc(24 / 12);
+    letter-spacing: 0.03em;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .masters__text {
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    letter-spacing: 0.03em;
+    padding: 40px;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .masters__text {
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    letter-spacing: 0.03em;
+    padding: 40px;
+    height: 100%;
+  }
 }
 
 .images:hover .masters__text {
