@@ -90,8 +90,12 @@
   }
 }
 .buttons {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 130px;
+    padding-top: 94px;
+  }
 }
 .buttons__list {
   @media screen and (min-width: 480px) {

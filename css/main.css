@@ -188,8 +188,15 @@ img {
 }
 
 .buttons {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons {
+    padding-bottom: 130px;
+    padding-top: 94px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1826,8 +1833,34 @@ img {
 
 .team {
   background-color: #f5f4fa;
-  padding-bottom: 94px;
-  padding-top: 94px;
+}
+
+@media screen and (min-width: 320px) {
+  .team {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .team {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .team__title {
@@ -1984,9 +2017,25 @@ img {
   margin-right: 0px;
 }
 
-.clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (min-width: 320px) {
+  .clients {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -2002,7 +2051,7 @@ img {
 
 @media screen and (min-width: 320px) {
   .clients__title {
-    padding-bottom: 15px;
+    padding-bottom: 0px;
   }
 }
 
