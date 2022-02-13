@@ -55,18 +55,18 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: calc(14 / 12);
+  font-size: 11px;
+  line-height: calc(14 / 11);
   letter-spacing: 0.03em;
   // margin-left: 20px;
   @media screen and (min-width: 320px) {
-    margin-left: 10px;
+    margin-left: 8px;
   }
   @media screen and (min-width: 480px) {
-    margin-left: 0;
+    margin-left: 8px;
   }
   @media screen and (min-width: 768px) {
-    margin-left: 0;
+    margin-left: 8px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 10px;
@@ -89,25 +89,25 @@
 }
 
 .icon {
-  content: "";
+  // content: "";
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
-  position: absolute;
-  left: 27px;
+  // position: absolute;
+  // // left: 27px;
   border: 2px solid black;
   border-radius: 4px;
   @media screen and (min-width: 320px) {
-    left: 40px;
+    // left: 40px;
   }
   @media screen and (min-width: 480px) {
-    left: 29px;
+    // left: 29px;
   }
   @media screen and (min-width: 768px) {
-    left: 29px;
+    // left: 29px;
   }
   @media screen and (min-width: 1200px) {
-    left: 39px;
+    // left: 39px;
   }
 }
 .checkbox__input:checked + .icon {
@@ -173,18 +173,21 @@
   border-radius: 5px;
 }
 
-.checkbox {
-  padding-left: 10px;
-}
+// .checkbox {
+//   // padding-left: 10px;
+// }
 .link-dogovir {
   color: #2196f3;
   text-decoration: underline;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.03em;
+  @media screen and (min-width: 480px) {
+    font-size: 11px;
+    line-height: calc(14 / 11);
+  }
+
+  // letter-spacing: 0.03em;
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: calc(24 / 14);
