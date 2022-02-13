@@ -471,22 +471,21 @@ img {
 
 @media screen and (min-width: 320px) {
   .modal {
-    width: 300px;
-    height: 609px;
+    width: 100%;
+    max-width: 450px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .modal {
-    width: 450px;
-    height: 609px;
+    width: 100%;
+    max-width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
-    min-height: 581px;
+    width: 100%;
   }
 }
 
@@ -686,30 +685,13 @@ img {
 }
 
 .wrap__input {
+  width: 100%;
   padding-left: 40px;
   height: 40px;
   border: 1px solid #999999;
   border-radius: 4px;
   color: #000000;
   outline: none;
-}
-
-@media screen and (min-width: 320px) {
-  .wrap__input {
-    width: 220px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .wrap__input {
-    width: 370px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .wrap__input {
-    width: 448px;
-  }
 }
 
 .wrap__input:focus {
