@@ -156,13 +156,13 @@
 
 .masters__text {
   @media screen and (min-width: 320px) {
-    font-size: 12px;
-    line-height: calc(24 / 12);
-    letter-spacing: 0.03em;
-    padding-top: 63px;
-    padding-right: 24px;
-    padding-bottom: 63px;
-    padding-left: 24px;
+    font-size: 10px;
+    line-height: calc(16 / 10);
+    letter-spacing: 0.02em;
+    padding-top: 55px;
+    padding-right: 18px;
+    padding-bottom: 55px;
+    padding-left: 18px;
   }
   @media screen and (min-width: 480px) {
     font-size: 12px;
